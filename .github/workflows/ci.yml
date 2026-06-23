@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a message
-        run: echo "Hello ! My first CI/CD pipeline is running!"
+        run: echo "Hello! my first CI/CD pipeline is running!"
       - name: Print the current date
         run: date
-      - name: List files in the repo
+      - name: List file in the repo
         run: ls -la
