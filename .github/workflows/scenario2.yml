@@ -1,0 +1,16 @@
+name: Two Jobs Demo
+
+on: push
+
+jobs:
+  job-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a messege 
+        run: echo "This is job one"
+
+  job-two:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "This is job two"
