@@ -5,9 +5,10 @@ on: push
 jobs:
   show-env:
     runs-on: ubuntu-latest
-      steps:
-        - name: Print the secret
-          env:
-            SECRET_VALUE: ${{secret.MY_SECRET_MESSAGE }}
-          run: echo "The secret value is being used ( not printed for safety)"
-          run: echo "$SECRET_VALUE"
+    steps:
+      - name: Print the secret
+        env:
+          SECRET_VALUE: ${{ secrets.MY_SECRET_MESSAGE }}
+        run: |
+          echo "The secret value is being used ( not printed for safety )"
+          echo "$SECRET_VALUE"
