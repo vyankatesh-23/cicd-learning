@@ -1,0 +1,14 @@
+name: System info check
+
+on: push
+
+jobs:
+  check-system:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the OS version
+        run: cat /etc/os-release
+      - name: Print available disk space
+        run: df -h
+      - name: Print available memory
+        run: free -h
