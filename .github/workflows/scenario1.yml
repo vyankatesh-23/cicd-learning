@@ -1,6 +1,9 @@
 name: System info check
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   check-system:
