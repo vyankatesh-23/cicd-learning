@@ -12,3 +12,7 @@ jobs:
         run: date
       - name: List file in the repo
         run: ls -la
+      - name: Print linux username
+        run: whoami
+      - name: Print current working directory
+        run: pwd
