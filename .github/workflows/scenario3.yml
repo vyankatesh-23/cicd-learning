@@ -1,0 +1,13 @@
+name: Multi Command Step
+
+on: push
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: multi command in one step
+        run: |
+          echo "Starting task"
+          echo "Doing some work"
+          echo "Task finished"
