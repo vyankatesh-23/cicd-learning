@@ -1,0 +1,10 @@
+name: Read My Files
+
+on: push
+
+jobs:
+  check-out-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls -la
